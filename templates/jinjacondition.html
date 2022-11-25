@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jinja condition</title>
+    <style>
+        #a{
+            
+        }
+        body{
+            background:repeating-conic-gradient(green,yellow,blue);
+        }
+        div{
+            background-color: blueviolet;
+            border: 10px solid black;
+            border-radius: 200px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <marquee><h1>harish {{ name }}</h1></marquee>
+    <!-- if else condition -->
+    <!-- {% if 100 > 10 %}
+        <h1>a is max</h1>
+    {% else %}
+    <h1>b is max</h1>
+    {% endif%} -->
+    <div>
+    if elif condition
+
+    {% if a > b and a > c %}
+        <h1>a is max</h1>
+    {% elif b > c %}
+        <h1>b is max</h1>
+    {% else %}
+    <h1>c is max</h1>
+    {% endif%}
+
+    nested if condition
+
+    {% if a > b %}
+        {% if a > c %}
+            <h1>a is max</h1>
+        {% else %}
+            <h1>c is max</h1>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+            <h1>b is max </h1>
+            {% else %}
+            <h1 id="a">c is max</h1>
+        {% endif %}
+    {% endif %}
+    </div>
+    </center>
+
+    
+</body>
+</html>
